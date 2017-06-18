@@ -1,0 +1,30 @@
+{
+    "requirejs": {
+        "main": {
+            "options": {
+                "baseUrl": "src/",
+                "paths": {
+                    "A": "a",
+                    "B": "b"
+                },
+                "web": {
+                    "include": [
+                        "A",
+                        "B"
+                    ],
+                    "out": "dest/app.min.js"
+                }
+            }
+        }
+    }
+}
+// requirejs: {
+//   compile: {
+//     options: {
+//       baseUrl: "path/to/base",
+//       mainConfigFile: "path/to/config.js",
+//       name: "path/to/almond", // assumes a production build using almond
+//       out: "path/to/optimized.js"
+//     }
+//   }
+// }

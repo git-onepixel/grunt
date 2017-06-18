@@ -1,10 +1,6 @@
-var b = (function(){
-    return{
-        print:function(first,second){
-            var result = a.add(first,second);
+define(["A"], function(A) {
+    'use strict';
 
-            return result; 
-			
-        }
-    }
-})();
+    console.log(A.add(3, 4))
+
+});

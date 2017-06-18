@@ -1,12 +1,8 @@
-var a = (function(){
-   return {
-       /**
-        * @param first
-        * @param second
-        * @returns {*}
-        */
-       add:function(first,second){
-           return first+second;
-       }
-   }
-})();
+define([], function() {
+    'use strict';
+    return {
+        add: function(x, y) {
+            return x + y
+        }
+    }
+});
