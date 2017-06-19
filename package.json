@@ -13,6 +13,7 @@
     "author": "onepixel",
     "license": "MIT",
     "devDependencies": {
+        "asset-cache-control": "^0.1.0",
         "grunt": "^0.4.5",
         "grunt-contrib-concat": "^0.5.1",
         "grunt-contrib-cssmin": "^0.14.0",

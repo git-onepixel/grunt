@@ -30,23 +30,36 @@ module.exports = function(grunt) {
     // });
 
     grunt.initConfig({
+        //合并requirejs模块
         requirejs: {
             compile: {
                 options: {
                     baseUrl: "src/",
                     paths: {
                         A: "a",
-                        B: "b"
+                        B: "b",
+                        Main: "main"
                     },
-                    include: ["A", "B"],
+                    include: ["A", "B", "Main"],
                     out: "dest/app.min.js"
                 }
+            }
+        },
+        //文件版本控制
+        cache: {
+            index: {
+                assetUrl: 'dest/app.min.js',
+                files: {
+                    tmp: ['index.html']
+                }
+
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('asset-cache-control');
 
-    //grunt.registerTask('default', ['requirejs']);
+    grunt.registerTask('default', ['requirejs', 'cache']);
 
 }

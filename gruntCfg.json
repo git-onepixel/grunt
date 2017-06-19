@@ -18,13 +18,3 @@
         }
     }
 }
-// requirejs: {
-//   compile: {
-//     options: {
-//       baseUrl: "path/to/base",
-//       mainConfigFile: "path/to/config.js",
-//       name: "path/to/almond", // assumes a production build using almond
-//       out: "path/to/optimized.js"
-//     }
-//   }
-// }
